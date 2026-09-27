@@ -31,9 +31,15 @@
       <span>voltar</span>
     </a>
   </main>
+  <audio id="music" src="../assets/audio/back.mp3" loop preload="auto" autoplay></audio>
   <script>
     const manualPage = document.querySelector("#manualPage");
     const menuLink = document.querySelector(".back-to-menu");
+    const music = document.querySelector("#music");
+
+    music.play().catch((error) => {
+      console.warn("O navegador bloqueou o autoplay nesta página:", error);
+    });
 
     function returnToMenu(event) {
       event.preventDefault();
