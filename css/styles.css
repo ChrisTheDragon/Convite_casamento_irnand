@@ -140,7 +140,7 @@ body {
   color: var(--intro-text);
   background:
     linear-gradient(180deg, rgb(17 25 18 / 8%) 0%, rgb(17 25 18 / 18%) 42%, rgb(17 25 18 / 72%) 100%),
-    url("../assets/images/casal1.jpeg") center center / cover no-repeat;
+    url("../assets/images/casal8.jpeg") center center / cover no-repeat;
 }
 
 .page-intro::before {

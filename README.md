@@ -35,7 +35,7 @@ Convite de casamento interativo, responsivo e otimizado para dispositivos móvei
 │   │   └── .gitkeep
 │   └── images/
 │       ├── Convite.jpeg
-│       ├── casal1.jpeg
+│       ├── casal8.jpeg
 │       ├── casal2.jpeg
 │       ├── casal3.jpeg
 │       ├── casal4.jpeg
@@ -50,7 +50,8 @@ Convite de casamento interativo, responsivo e otimizado para dispositivos móvei
 ## Páginas do convite
 
 - **Capa:** utiliza `assets/images/Convite.jpeg` e abre o convite ao tocar no selo.
-- **Mensagem inicial:** utiliza `assets/images/casal1.jpeg`.
+- **Imagem de compartilhamento:** utiliza `assets/images/Cover2.jpeg`.
+- **Mensagem inicial:** utiliza `assets/images/casal8.jpeg`.
 - **Data do casamento:** utiliza `assets/images/casal2.jpeg`.
 - **Informações do evento:** utiliza `assets/images/casal3.jpeg`.
 - **Menu de ações:** utiliza `assets/images/casal4.jpeg`.
@@ -69,7 +70,8 @@ Os nomes dos arquivos diferenciam letras maiúsculas e minúsculas:
 
 ```text
 Convite.jpeg
-casal1.jpeg
+Cover2.jpeg
+casal8.jpeg
 casal2.jpeg
 casal3.jpeg
 casal4.jpeg
