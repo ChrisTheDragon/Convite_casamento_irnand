@@ -6,7 +6,7 @@ Convite de casamento interativo, responsivo e otimizado para dispositivos móvei
 
 > Substitua o endereço abaixo pelo link publicado no GitHub Pages.
 
-**Acessar convite:** [COLE_AQUI_O_LINK_DO_GITHUB_PAGES](https://SEU_USUARIO.github.io/SEU_REPOSITORIO/)
+**Acessar convite:** [CONVITE](https://christhedragon.github.io/Convite_casamento_irnand/)
 
 ## Tecnologias utilizadas
 
@@ -110,50 +110,6 @@ Os principais estilos estão em `css/styles.css`. As variáveis no início do ar
 --menu-icon-size
 ```
 
-## Executar localmente
-
-O convite pode ser aberto diretamente pelo arquivo `index.html`.
-
-Para uma experiência mais próxima do GitHub Pages, também é possível iniciar um servidor local simples:
-
-```bash
-python3 -m http.server 8000
-```
-
-Depois, acesse:
-
-```text
-http://localhost:8000
-```
-
-## Publicar no GitHub Pages
-
-1. Crie um repositório público no GitHub.
-2. Envie todo o conteúdo deste diretório para a branch `main`.
-3. No repositório, abra **Settings → Pages**.
-4. Em **Build and deployment**, selecione:
-   - **Source:** `Deploy from a branch`
-   - **Branch:** `main`
-   - **Folder:** `/ (root)`
-5. Salve e aguarde a publicação.
-
-O endereço normalmente será:
-
-```text
-https://SEU_USUARIO.github.io/SEU_REPOSITORIO/
-```
-
-## Atualizar uma publicação existente
-
-Depois de modificar o projeto:
-
-```bash
-git add .
-git commit -m "Atualiza convite"
-git push
-```
-
-O GitHub Pages fará uma nova publicação automaticamente.
 
 ## Observações
 
