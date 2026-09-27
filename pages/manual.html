@@ -37,6 +37,7 @@
 
     function returnToMenu(event) {
       event.preventDefault();
+      sessionStorage.setItem("playMusicOnReturn", "true");
       manualPage.classList.add("is-leaving");
       window.setTimeout(() => {
         window.location.href = menuLink.href;

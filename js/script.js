@@ -64,6 +64,11 @@ if (window.location.hash === "#menu") {
   cover.classList.add("is-open");
   book.classList.add("is-ready");
   swiper.slideTo(3, 0);
+
+  if (sessionStorage.getItem("playMusicOnReturn") === "true") {
+    sessionStorage.removeItem("playMusicOnReturn");
+    startMusic();
+  }
 }
 
 document.querySelectorAll(".book .page[role='button']").forEach((page) => {
