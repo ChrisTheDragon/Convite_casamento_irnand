@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#27332f">
+  <title>Manual dos convidados | Isabela &amp; Renato</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <main class="dress-page manual-page" id="manualPage" role="link" tabindex="0" aria-label="Voltar para o menu">
+    <section class="dress-card manual-card" aria-labelledby="manual-title">
+      <h1 id="manual-title">Manual dos convidados</h1>
+      <div class="dress-rule" aria-hidden="true"></div>
+      <div class="manual-list">
+        <p><span class="manual-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5 9.5 17 19 7.5"></path><circle cx="12" cy="12" r="9"></circle></svg></span>Confirme sua presença</p>
+        <p><span class="manual-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="9"></circle></svg></span>Não deixe de ser pontual</p>
+        <p><span class="manual-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20S4 15.5 4 9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 8 2.5C20 15.5 12 20 12 20Z"></path></svg></span>Branco é a cor da Noiva</p>
+        <p><span class="manual-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"></path><circle cx="12" cy="12" r="9"></circle></svg></span>Não faça comentários negativos</p>
+        <p><span class="manual-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h16M12 4v16"></path><circle cx="12" cy="12" r="9"></circle></svg></span>Participe da cerimônia</p>
+        <p><span class="manual-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8h16v11H4zM8 8V5h8v3M12 8v11"></path></svg></span>Não atrapalhe os fotógrafos</p>
+        <p><span class="manual-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19c2-4 5-6 7-6s5 2 7 6M8 10a4 4 0 1 0 8 0"></path></svg></span>Não saia sem se despedir dos noivos</p>
+        <p><span class="manual-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4"></path></svg></span>Aproveite muito a festa</p>
+      </div>
+    </section>
+    <a class="back-to-menu" href="../index.html#menu" aria-label="Voltar para o menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg>
+      <span>voltar</span>
+    </a>
+  </main>
+  <script>
+    const manualPage = document.querySelector("#manualPage");
+    const menuLink = document.querySelector(".back-to-menu");
+
+    function returnToMenu(event) {
+      event.preventDefault();
+      manualPage.classList.add("is-leaving");
+      window.setTimeout(() => {
+        window.location.href = menuLink.href;
+      }, 520);
+    }
+
+    manualPage.addEventListener("click", returnToMenu);
+    manualPage.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        returnToMenu(event);
+      }
+    });
+  </script>
+</body>
+</html>

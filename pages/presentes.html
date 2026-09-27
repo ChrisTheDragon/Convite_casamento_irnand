@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#27332f">
+  <title>Sugestão de presentes | Isabela &amp; Renato</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <main class="dress-page gifts-page" id="giftsPage" role="link" tabindex="0" aria-label="Voltar para o menu">
+    <section class="dress-card gifts-card" aria-labelledby="gifts-title">
+      <h1 id="gifts-title">Sugestão de presentes</h1>
+      <div class="dress-rule" aria-hidden="true"></div>
+      <div class="dress-copy gifts-copy">
+        <p>Sua presença é nosso maior presente</p>
+        <p>Mas, caso desejem nos presentear e estejam em dúvida sobre o que escolher, disponibilizamos a opção de contribuir via Pix. Será recebido com muito carinho e fará parte da construção do nosso novo lar. 🤍</p>
+      </div>
+      <div class="pix-key">
+        <span>Chave Pix</span>
+        <strong>070.883.152-46</strong>
+      </div>
+    </section>
+    <a class="back-to-menu" href="../index.html#menu" aria-label="Voltar para o menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg>
+      <span>voltar</span>
+    </a>
+  </main>
+  <script>
+    const giftsPage = document.querySelector("#giftsPage");
+    const menuLink = document.querySelector(".back-to-menu");
+
+    function returnToMenu(event) {
+      event.preventDefault();
+      giftsPage.classList.add("is-leaving");
+      window.setTimeout(() => {
+        window.location.href = menuLink.href;
+      }, 520);
+    }
+
+    giftsPage.addEventListener("click", returnToMenu);
+    giftsPage.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        returnToMenu(event);
+      }
+    });
+  </script>
+</body>
+</html>

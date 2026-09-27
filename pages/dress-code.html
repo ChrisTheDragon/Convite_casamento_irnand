@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#27332f">
+  <title>Dress Code | Isabela &amp; Renato</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <main class="dress-page" id="dressPage" role="link" tabindex="0" aria-label="Voltar para o menu">
+    <section class="dress-card" aria-labelledby="dress-title">
+      <h1 id="dress-title">Dress Code</h1>
+      <div class="dress-rule" aria-hidden="true"></div>
+      <div class="dress-copy">
+        <p>Sugerimos que escolha o traje que mais combina com você e com seu estilo.</p>
+        <p>Pedimos apenas que evite as cores branca, azul-marinho, marrom e dourado, que estarão reservadas para a composição do casamento.</p>
+      </div>
+    </section>
+    <a class="back-to-menu" href="../index.html#menu" aria-label="Voltar para o menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M19 12H5M11 6l-6 6 6 6"></path>
+      </svg>
+      <span>voltar</span>
+    </a>
+  </main>
+  <script>
+    const dressPage = document.querySelector("#dressPage");
+    const menuLink = document.querySelector(".back-to-menu");
+
+    function returnToMenu(event) {
+      event.preventDefault();
+      dressPage.classList.add("is-leaving");
+      window.setTimeout(() => {
+        window.location.href = menuLink.href;
+      }, 520);
+    }
+
+    dressPage.addEventListener("click", returnToMenu);
+    dressPage.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        returnToMenu(event);
+      }
+    });
+  </script>
+</body>
+</html>

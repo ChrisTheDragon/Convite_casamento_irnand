@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f3eee7">
+  <title>Nosso casamento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="invite">
+    <section class="cover" id="cover" aria-label="Capa do convite">
+      <!-- SUBSTITUA o caminho se o nome do arquivo da capa for alterado. -->
+      <img class="cover-image" src="assets/images/Convite.jpeg" alt="Capa do convite de casamento">
+      <!-- Botão invisível sobre o selo da imagem; ajuste a posição no CSS se necessário. -->
+      <button class="cover-seal-button" id="openSeal" type="button" aria-label="Abrir convite"></button>
+    </section>
+
+    <section class="book" id="book" aria-label="Páginas do convite">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <article class="swiper-slide">
+            <div class="page page-intro" role="button" tabindex="0" aria-label="Avançar para a próxima página">
+              <span class="page-number">01 / 05</span>
+              <div class="intro-content">
+                <blockquote>
+                  “Acima de tudo, porém, revistam-se do amor, que é o elo perfeito.”
+                  <cite>Colossenses 3:14</cite>
+                </blockquote>
+                <p>Guiados pelo amor e unidos pela graça de Deus, convidamos você para celebrar conosco o início da nossa vida a dois.</p>
+              </div>
+              <span class="next-page-indicator" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M5 12h13M13 6l6 6-6 6"></path>
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <article class="swiper-slide">
+            <div class="page page-date page-next" role="button" tabindex="0" aria-label="Avançar para a próxima página">
+              <span class="page-number">02 / 05</span>
+              <div class="date-content">
+                <h2 class="date-title">
+                  <span>Aguardamos</span>
+                  <em>no</em>
+                  <span>Dia</span>
+                </h2>
+                <time datetime="2026-11-21">21 de NOV de 2026</time>
+              </div>
+              <span class="next-page-indicator" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M5 12h13M13 6l6 6-6 6"></path>
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <article class="swiper-slide">
+            <div class="page page-event page-next" role="button" tabindex="0" aria-label="Avançar para a próxima página">
+              <span class="page-number">03 / 05</span>
+              <div class="event-content">
+                <p class="event-date">Data: 21   Novembro   2026</p>
+                <p class="event-detail">Horário: Sábado às 17hrs</p>
+                <p class="event-detail">Local: Rio São Lourenço Igreja Betel</p>
+              </div>
+              <span class="next-page-indicator" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M5 12h13M13 6l6 6-6 6"></path>
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <article class="swiper-slide">
+            <div class="page page-menu page-next" id="menu" role="button" tabindex="0" aria-label="Abrir opções do convite">
+              <span class="page-number">04 / 05</span>
+              <div class="menu-panel">
+                <nav class="menu-links" aria-label="Informações do casamento">
+                  <!-- SUBSTITUA o placeholder pelo link real do Google Maps -->
+                  <a href="https://maps.google.com" target="_blank" rel="noopener" aria-label="Abrir localização no Google Maps">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"></path><circle cx="12" cy="9" r="2.2"></circle></svg>
+                    <span>Local</span>
+                  </a>
+                  <a href="pages/presentes.html" aria-label="Abrir página de presentes">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h16v10H4zM3 7h18v3H3zM12 7v13M12 7H8.5a2.5 2.5 0 1 1 2.5-2.5C11 5.8 12 7 12 7Zm0 0h3.5A2.5 2.5 0 1 0 13 4.5C13 5.8 12 7 12 7Z"></path></svg>
+                    <span>Presentes</span>
+                  </a>
+                  <!-- SUBSTITUA o placeholder pelo número real do WhatsApp -->
+                  <a href="https://wa.me/5500000000000?text=Confirmo%20minha%20presença" target="_blank" rel="noopener" aria-label="Confirmar presença pelo WhatsApp">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z"></path><path d="M9 8.5c.2 1.8 1.7 3.7 3.5 4.5l1.2-1 1.8.8c.2.1.3.3.2.5-.3.8-1 1.3-1.8 1.2-3.8-.5-5.9-3.5-6.1-5.5-.1-.8.4-1.5 1.2-1.8.2-.1.4 0 .5.2l.8 1.8-1.3 1.1Z"></path></svg>
+                    <span>Confirmar Presença</span>
+                  </a>
+                  <a href="pages/dress-code.html" aria-label="Abrir página de dress code">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 4 4 3 4-3 4 3-2 6-2-1v8H8v-8l-2 1-2-6 4-3Z"></path></svg>
+                    <span>Dress code</span>
+                  </a>
+                  <a href="pages/manual.html" aria-label="Abrir manual dos convidados">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3V4Z"></path><path d="M8 20V7a3 3 0 0 1 3-3M9 9h7M9 13h7"></path></svg>
+                    <span>Manual do Convidado</span>
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </article>
+
+          <article class="swiper-slide">
+            <div class="page page-final" aria-label="Mensagem final">
+              <span class="page-number">05 / 05</span>
+              <h2 class="final-message">Esperamos<br>por Você!</h2>
+            </div>
+          </article>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <p class="hint">deslize para folhear</p>
+    </section>
+
+    <button class="sound-toggle" id="soundToggle" type="button" aria-label="Tocar música">
+      <svg class="play" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 10v4h4l5 4V6l-5 4H4zM16 9.5a4 4 0 0 1 0 5"></path>
+      </svg>
+      <svg class="pause" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 10v4h4l5 4V6l-5 4H4zM17 9l4 6M21 9l-4 6"></path>
+      </svg>
+    </button>
+
+    <!-- SUBSTITUA o arquivo por uma música local em assets/audio/ -->
+    <audio id="music" src="assets/audio/audio.mp3" loop preload="auto"></audio>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
