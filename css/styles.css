@@ -229,6 +229,43 @@ body {
   color: var(--final-text);
 }
 
+.final-back-button {
+  position: absolute;
+  bottom: max(22px, env(safe-area-inset-bottom));
+  left: max(22px, env(safe-area-inset-left));
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 8px 13px;
+  border: 1px solid rgb(255 250 242 / 42%);
+  border-radius: 999px;
+  color: var(--final-text);
+  background: rgb(27 20 15 / 42%);
+  font: 500 11px/1 Montserrat, sans-serif;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.final-back-button:hover,
+.final-back-button:active {
+  background: rgb(27 20 15 / 72%);
+  transform: translateX(-3px);
+}
+
+.final-back-button svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
 .final-message {
   position: relative;
   z-index: 1;

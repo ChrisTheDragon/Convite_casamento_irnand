@@ -3,6 +3,7 @@ const book = document.querySelector("#book");
 const seal = document.querySelector("#openSeal");
 const music = document.querySelector("#music");
 const soundToggle = document.querySelector("#soundToggle");
+const finalBackButton = document.querySelector("#finalBackButton");
 
 function updateSoundButton() {
   const isPlaying = !music.paused;
@@ -58,6 +59,10 @@ const swiper = new Swiper(".swiper", {
     slideShadows: true,
     limitRotation: true,
   },
+});
+
+finalBackButton.addEventListener("click", () => {
+  swiper.slidePrev();
 });
 
 if (window.location.hash === "#menu") {
