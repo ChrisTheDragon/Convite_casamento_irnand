@@ -12,16 +12,22 @@ function updateSoundButton() {
 }
 
 function startMusic() {
-  music.play()
-    .then(updateSoundButton)
-    .catch(updateSoundButton);
+  return music.play()
+    .then(() => {
+      updateSoundButton();
+    })
+    .catch((error) => {
+      updateSoundButton();
+      console.error("Não foi possível iniciar a música:", error);
+    });
 }
 
 seal.addEventListener("click", () => {
+  // O play() ocorre dentro do clique do usuário para funcionar em navegadores mobile.
+  startMusic();
   cover.classList.add("is-open");
   book.classList.add("is-ready");
-  startMusic();
-}, { once: true });
+});
 
 soundToggle.addEventListener("click", () => {
   if (music.paused) {
